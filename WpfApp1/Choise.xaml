@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.Choise"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Выбор вкладки" Height="275.507" Width="511.729"
+        WindowStartupLocation="CenterScreen"
+        Background="Gray"
+        Name="ChoiseForm" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="124*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="btWeapon" Content="Оружие" 
+                Grid.Column="0" Click="BtWeapon_Click" Margin="10,61,344,127" Grid.ColumnSpan="2"/>
+        <Button Name="btPrisonres" Content="Заключённые" 
+                Grid.Column="1"  Margin="36.5,61,187,127" Click="BtPrisonres_Click"/>
+        <Button Name="btBack" Content="Назад" 
+                Grid.Column="1" Margin="193.5,61,10,127" Click="BtBack_Click"/>
+    </Grid>
+</Window>
